@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://42tcliy2a2hw" path="res://background/Parralcentro.jpeg" id="1_1hu1m"]
 [ext_resource type="Texture2D" uid="uid://cbfiwg0gf8tr3" path="res://Tilemap/00Atlas.png" id="2_l5324"]
-[ext_resource type="PackedScene" uid="uid://cyy1fo2d66vnu" path="res://sprites/Tahuari.tscn" id="3_ytsh8"]
-[ext_resource type="PackedScene" uid="uid://b1jaa8c2vpvv" path="res://sprites/barradevida.tscn" id="4_048q4"]
-[ext_resource type="PackedScene" uid="uid://lb5sj4tyy071" path="res://sprites/moneda.tscn" id="5_f6v4j"]
-[ext_resource type="PackedScene" uid="uid://bsynhx73842xc" path="res://sprites/puerta.tscn" id="6_ptjdn"]
+[ext_resource type="PackedScene" uid="uid://cyy1fo2d66vnu" path="res://Escenas/Tahuari.tscn" id="3_ytsh8"]
+[ext_resource type="PackedScene" uid="uid://b1jaa8c2vpvv" path="res://Escenas/barradevida.tscn" id="4_048q4"]
+[ext_resource type="PackedScene" uid="uid://lb5sj4tyy071" path="res://Escenas/moneda.tscn" id="5_f6v4j"]
+[ext_resource type="PackedScene" uid="uid://bsynhx73842xc" path="res://Escenas/puerta.tscn" id="6_ptjdn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l5324"]
 texture = ExtResource("2_l5324")
@@ -137,7 +137,7 @@ texture = ExtResource("2_l5324")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_l5324")
 
-[node name="Node2D" type="Node2D"]
+[node name="parral" type="Node2D"]
 position = Vector2(4, 4)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
