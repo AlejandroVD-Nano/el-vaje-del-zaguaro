@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2jcikgbud3t1"]
+
+[ext_resource type="Texture2D" uid="uid://dl5be7x2tsxom" path="res://imagenes/Llave-removebg-preview.png" id="1_o7t4g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eo2i0"]
+size = Vector2(409, 233)
+
+[node name="Llave" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_o7t4g")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(8.5, -6.5)
+shape = SubResource("RectangleShape2D_eo2i0")

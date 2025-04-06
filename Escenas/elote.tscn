@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyds47q5rqud1"]
+
+[ext_resource type="Texture2D" uid="uid://qidpk3evgcyd" path="res://imagenes/Elote-removebg-preview.png" id="1_1eneq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e1x7b"]
+radius = 16.0
+height = 48.0
+
+[node name="Elote" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1eneq")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(-4, -11)
+shape = SubResource("CapsuleShape2D_e1x7b")
