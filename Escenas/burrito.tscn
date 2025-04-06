@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://41scm50iktaj"]
+
+[ext_resource type="Texture2D" uid="uid://duj4qtn5hk18b" path="res://imagenes/burrito.png" id="1_82rjk"]
+
+[node name="Burrito" type="Sprite2D"]
+position = Vector2(577.75, 324)
+scale = Vector2(1.58966, 1.2)
+texture = ExtResource("1_82rjk")
