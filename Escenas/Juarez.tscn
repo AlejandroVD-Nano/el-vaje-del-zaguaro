@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=4 uid="uid://bni2r8l8keotf"]
+[gd_scene load_steps=11 format=4 uid="uid://bni2r8l8keotf"]
 
 [ext_resource type="Texture2D" uid="uid://gtu6fclrgdms" path="res://background/Juarez.jpeg" id="1_8tusx"]
 [ext_resource type="Texture2D" uid="uid://cbfiwg0gf8tr3" path="res://Tilemap/00Atlas.png" id="2_635g3"]
 [ext_resource type="PackedScene" uid="uid://cyy1fo2d66vnu" path="res://Escenas/Tahuari.tscn" id="3_gpqnj"]
 [ext_resource type="PackedScene" uid="uid://b1jaa8c2vpvv" path="res://Escenas/barradevida.tscn" id="4_2guw5"]
-[ext_resource type="Script" uid="uid://dk8vtbcslrbbi" path="res://Escenas/gameover.gd" id="5_gbin4"]
+[ext_resource type="Script" uid="uid://dk8vtbcslrbbi" path="res://sprites/gameover.gd" id="5_gbin4"]
 [ext_resource type="PackedScene" uid="uid://7srwkwbie33t" path="res://Escenas/ajolopeso.tscn" id="6_vcijs"]
+[ext_resource type="PackedScene" uid="uid://cgg0dau3p4p7m" path="res://Escenas/coyote.tscn" id="7_js6ll"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gpqnj"]
 texture = ExtResource("2_635g3")
@@ -149,5 +150,9 @@ shape = SubResource("RectangleShape2D_vcijs")
 [node name="Ajolopeso" parent="." instance=ExtResource("6_vcijs")]
 position = Vector2(405, -15)
 scale = Vector2(0.03, 0.03)
+
+[node name="coyote" parent="." instance=ExtResource("7_js6ll")]
+position = Vector2(521, 635)
+scale = Vector2(0.2, 0.2)
 
 [connection signal="body_entered" from="ColorRect/Area2D" to="ColorRect" method="_on_area_2d_body_entered"]

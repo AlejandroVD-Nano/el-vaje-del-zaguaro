@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqjchc6y3imfu"]
+[gd_scene load_steps=5 format=3 uid="uid://di1xfrcdexhoq"]
 
 [ext_resource type="Texture2D" uid="uid://n1v7ct0ajt1q" path="res://Tilemap/menu.png" id="2_17m5t"]
 [ext_resource type="PackedScene" uid="uid://7srwkwbie33t" path="res://Escenas/ajolopeso.tscn" id="2_cp3rd"]
-[ext_resource type="PackedScene" uid="uid://41scm50iktaj" path="res://Escenas/burrito.tscn" id="3_kim34"]
+[ext_resource type="PackedScene" uid="uid://082s132sfj1m" path="res://Escenas/burrito.tscn" id="3_kim34"]
 [ext_resource type="PackedScene" uid="uid://cag8cka4r5qqd" path="res://Escenas/lingote_de_plata.tscn" id="4_v8bcg"]
 
 [node name="Node2D" type="Node2D"]
@@ -12,14 +12,14 @@ position = Vector2(580, 326)
 scale = Vector2(0.751953, 0.635254)
 texture = ExtResource("2_17m5t")
 
-[node name="Ajolopeso" parent="Sprite2D" instance=ExtResource("2_cp3rd")]
-position = Vector2(142.296, 12.5934)
-scale = Vector2(0.088, 0.088)
-
-[node name="Burrito" parent="Sprite2D" instance=ExtResource("3_kim34")]
-position = Vector2(-26.5973, -37.7802)
-scale = Vector2(0.15775, 0.168948)
-
 [node name="LingoteDePlata" parent="." instance=ExtResource("4_v8bcg")]
 position = Vector2(373, 293)
 scale = Vector2(0.25, 0.25)
+
+[node name="Ajolopeso" parent="." instance=ExtResource("2_cp3rd")]
+position = Vector2(687, 334)
+scale = Vector2(0.0661719, 0.0559024)
+
+[node name="Burrito" parent="." instance=ExtResource("3_kim34")]
+position = Vector2(560, 302)
+scale = Vector2(0.118621, 0.107325)

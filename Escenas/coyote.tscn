@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgg0dau3p4p7m"]
+
+[ext_resource type="Script" uid="uid://da4mrh8em7qdx" path="res://sprites/coyote.gd" id="1_j2tmc"]
+[ext_resource type="Texture2D" uid="uid://dkp64rar6x1fc" path="res://imagenes/Coyote1.png" id="1_v5y35"]
+[ext_resource type="Texture2D" uid="uid://bkxc4t1nv683m" path="res://imagenes/Coyote2.png" id="2_j2tmc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1nq3h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_v5y35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_j2tmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_v5y35")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5y35"]
+size = Vector2(312, 375)
+
+[node name="coyote" type="CharacterBody2D"]
+script = ExtResource("1_j2tmc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1nq3h")
+animation = &"idle"
+frame_progress = 0.0480663
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-37, -2.5)
+shape = SubResource("RectangleShape2D_v5y35")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cag8cka4r5qqd"]
 
 [ext_resource type="Texture2D" uid="uid://b663ftfxau1rd" path="res://imagenes/LingoteDePlata-removebg-preview.png" id="1_r74ms"]
-[ext_resource type="Script" uid="uid://cftwud8mr7li1" path="res://Escenas/lingote_de_plata.gd" id="1_sjers"]
+[ext_resource type="Script" uid="uid://cftwud8mr7li1" path="res://sprites/lingote_de_plata.gd" id="1_sjers"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sjers"]
 size = Vector2(419, 327)
