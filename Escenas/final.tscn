@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://drqusfde6exi1"]
+
+[ext_resource type="Texture2D" uid="uid://p6esdr4ue3st" path="res://imagenes/cactos mamadisimo (hemos cruzado a norte pariente!).png" id="1_teg0c"]
+[ext_resource type="Texture2D" uid="uid://8jkss64dfcd1" path="res://imagenes/CuadroTexto.png" id="2_5at5q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CactosMamadisimo(hemosCruzadoANortePariente!)" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(592, 326)
+scale = Vector2(0.739258, 0.632813)
+texture = ExtResource("1_teg0c")
+
+[node name="CuadroTexto" type="Sprite2D" parent="."]
+position = Vector2(472, 518)
+scale = Vector2(1.40373, 1.25781)
+texture = ExtResource("2_5at5q")
