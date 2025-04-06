@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1jaa8c2vpvv"]
+
+[ext_resource type="Texture2D" uid="uid://b3wy0rslyjq4n" path="res://BarraDeAgua/GOTA editable5.1.png" id="1_twq65"]
+[ext_resource type="Script" uid="uid://hk5scrhk05yv" path="res://sprites/barradevida.gd" id="1_uywqs"]
+[ext_resource type="Texture2D" uid="uid://b5ewoxwapssi" path="res://BarraDeAgua/GOTA editable4.1.png" id="2_uywqs"]
+[ext_resource type="Texture2D" uid="uid://doce0lknmxbwt" path="res://BarraDeAgua/GOTA editable3.1.png" id="4_6d25e"]
+[ext_resource type="Texture2D" uid="uid://d1qaq0577wrnt" path="res://BarraDeAgua/GOTA editable2.1.png" id="4_kusty"]
+[ext_resource type="Texture2D" uid="uid://umv867m6rml7" path="res://BarraDeAgua/GOTA editable1.1.png" id="5_8e4gj"]
+[ext_resource type="Texture2D" uid="uid://de8iqdg8aon5m" path="res://BarraDeAgua/GOTA editable0.png" id="6_f7ujm"]
+
+[node name="Barradevida" type="Node2D"]
+script = ExtResource("1_uywqs")
+
+[node name="5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_twq65")
+
+[node name="4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_uywqs")
+
+[node name="3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_6d25e")
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_kusty")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_8e4gj")
+
+[node name="0" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_f7ujm")
